@@ -1,0 +1,15 @@
+.menssagem{
+    width: 100%;
+    text-align: center;
+    background:#c3c3c3;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.menssagem p{
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    color: #f43d4c;
+}

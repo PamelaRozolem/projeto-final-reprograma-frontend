@@ -1,0 +1,59 @@
+.home-pagina{
+  display: flex;
+  height: 80%;
+}
+
+.home-pagina.banner {
+  background: url(./banner.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-pagina.banner .card{
+    width: 400px;
+    margin-left: 70px;
+}
+
+.home-pagina.banner .card h1{
+  font-size: 3em;
+  color: #f51761;
+  line-height: 41px;
+  margin: 0;
+}
+.home-pagina.banner .card p{
+  font-size: 1.5em;
+  display: block;
+  margin-top: 10px;
+  color: #f1f1f7;
+}      
+
+.home-pagina.banner .link-registre, .link-acesse {
+  cursor: pointer;
+  text-decoration: none;
+  float: right;
+}
+
+.home-pagina.banner .link-registre{
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px !important;
+  color: #ffff !important;
+  background-image: -webkit-linear-gradient(45deg, rgba(240,55,73,1) 0%, rgba(253,136,73,1) 100%);
+  background-image: linear-gradient(45deg, rgba(240,55,73,1) 0%, rgba(253,136,73,1) 100%);
+  box-shadow: 0px 8px 27px 0px rgba(116, 44, 69, 0.21);
+}
+
+.home-pagina.banner .link-acesse {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px !important;
+  color: #ffff !important;
+  
+  border: 1px solid silver;
+}
+@media (min-width: 992px) {
+}

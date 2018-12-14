@@ -1,0 +1,7 @@
+.link {
+  cursor: pointer;
+  color: #f43d4c;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+}

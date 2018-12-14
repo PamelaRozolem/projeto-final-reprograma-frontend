@@ -1,0 +1,16 @@
+.reset-senha {
+    padding: 0.75rem 1rem 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  @media (min-width: 768px) {
+    .reset-senha  {
+        padding: 1.5rem 20% 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .reset-senha  {
+        padding: 2.25rem 30% 0;
+    }
+  }

@@ -1,0 +1,15 @@
+.confirmar-novo-usuario {
+    padding: 0.75rem 1rem 0;
+  }
+  
+  @media (min-width: 768px) {
+    .confirmar-novo-usuario  {
+        padding: 1.5rem 20% 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .confirmar-novo-usuario  {
+        padding: 2.25rem 30% 0;
+    }
+  }

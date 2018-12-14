@@ -46,12 +46,6 @@
   transform: translateX(0);
 }
 
-/*
-.navbar-menu__opcoes--ativo {
-  color:#232027 !important;
-}
-*/
-
 .navbar-menu__opcoes li + li {
   margin-top: 1rem;
 }
@@ -99,3 +93,10 @@
   }
 }
 
+.navbar-logout{
+  color:#f43d4c;
+}
+
+.navbar-logout .far{
+  color: #f43d4c;
+}

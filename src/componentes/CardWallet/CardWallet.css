@@ -5,10 +5,10 @@
   flex-direction: column;
   padding: 1rem;
   margin: 0 0.3em 0.8rem;
-  background: #f43d4c;
+  background: #f1f2f7;
   border-radius: 2px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
-  color: white
+  color: black;
 }
 .card-wallet p{
   margin: 0;

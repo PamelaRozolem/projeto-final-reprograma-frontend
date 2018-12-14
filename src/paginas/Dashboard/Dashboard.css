@@ -6,6 +6,7 @@
   background-color: #c3c3c3;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(rgba(240,55,73,1) 0%, rgba(253,136,73,1) 100%)
 }
 
 .dashboard .content {
@@ -33,6 +34,7 @@
   display: block;
   margin: 0 auto;
 }
+
 
 @media (min-width: 992px) {
   .dashboard {

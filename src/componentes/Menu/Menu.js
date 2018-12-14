@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
 
-// <Menu usuario={props.usuario} deslogaUsuario={props.deslogaUsuario} />
-// const props = { usuario: props.usuario, deslogaUsuario: props.deslogaUsuario }
 class Menu extends Component {
   constructor(props) {
     super(props)

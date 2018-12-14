@@ -100,3 +100,8 @@
 .navbar-logout .far{
   color: #f43d4c;
 }
+
+.navbar-logout .Li { 
+  list-style: none;
+  text-decoration: none;
+}

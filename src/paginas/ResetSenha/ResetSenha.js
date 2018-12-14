@@ -67,10 +67,10 @@ class ResetSenha extends Component {
                 <Legenda htmlFor="email">Email:</Legenda>
                 <Campo ref={this.emailRef} id="email" type="email" name="email" placeholder="Email" required onChange={this.habilitaDesabilita} />
                 
-                <Legenda htmlFor="senha">Senha:</Legenda>
+                <Legenda htmlFor="senha">Nova senha:</Legenda>
                 <Campo ref={this.senhaRef} id="senha" type="password" name="senha" placeholder="Senha" required minLength={6} onChange={this.habilitaDesabilita} />
                 
-                <Legenda htmlFor="confirmaSenha">Confirme sua senha:</Legenda>
+                <Legenda htmlFor="confirmaSenha">Confirme sua nova senha:</Legenda>
                 <Campo ref={this.confirmarSenhaRef} id="confirmaSenha" type="password" name="confirmaSenha" placeholder="confirmar senha" required minLength={6} onChange={this.habilitaDesabilita} />
                 
                 <Botao desabilitado={this.state.desabilitado}>Enviar</Botao>

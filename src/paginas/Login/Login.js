@@ -13,7 +13,7 @@ class Login extends Component {
   constructor(props) {
     super(props)
 
-    this.emailRef = React.createRef() // { current: null }
+    this.emailRef = React.createRef() 
     this.senhaRef = React.createRef()
     this.state = { desabilitado: true }
   }

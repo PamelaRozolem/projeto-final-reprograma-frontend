@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './CardWallet.css';
+import Moment from 'react-moment';
 
 class CardWallet extends Component{
   constructor(props){
@@ -9,10 +10,18 @@ class CardWallet extends Component{
  
 
   render(){
-    const {privateKey, publicKey} = this.props.dados;
+    const {privateKey, publicKey, createAt } = this.props.dados;
     return (
           <div className="card-wallet">
-              <h3>Wallet</h3>
+              <div className="header">
+                 <h3>
+                  <span className="fab fa-bitcoin text-yellow"></span>  Wallet
+                  <Moment className="datetime" format="DD/MM/YYYY HH:mm:ss"> 
+                    {createAt}
+                  </Moment>
+                </h3>
+              </div>
+              
               <p>Chave privada: <span className="word-break">{privateKey}</span></p>
               <br />
               <p>Chave publica: <span className="word-break">{publicKey}</span></p>

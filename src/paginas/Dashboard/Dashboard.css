@@ -1,35 +1,63 @@
 .dashboard {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: calc(100vh - 60px);
   padding: 1.5rem 1rem 0;
-  background-color: #c3c3c3;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(240,55,73,1) 0%, rgba(253,136,73,1) 100%)
+  background-color: #eef0f5;
 }
 
 .dashboard .content {
   display: flex;
-  flex-direction: row;
+  order: 2;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: left;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .dashboard .tools {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  width: 100%;
-  padding: 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+.text-yellow {
+  color: #ff8c00;
 }
 
 .dashboard .btn{
     border: none;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 0.8em;
 }
+
+.dashboard .cards-content{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-vazio{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  background: linear-gradient(to bottom, #848484 0%,#3c3c3c 100%);
+  min-height: 300px;
+  color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+.card-vazio h4{
+  margin: 0px;
+  font-size: 34px;
+}
+
 .dashboard__loading {
   display: block;
   margin: 0 auto;

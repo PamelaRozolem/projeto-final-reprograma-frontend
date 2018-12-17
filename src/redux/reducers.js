@@ -32,12 +32,18 @@ function usuario(state=usuarioInicial, action) {
 
 function cadastrarUsuario (state=[], action){
   switch(action.type) {
+    case 'USUARIO':
+      return action.response.data.user;
     case 'CADASTRA_USUARIO':
       return {status: action.response.status, message: action.response.data.message};
      case 'ERROR_CADASTRAR_USUARIO':
      return {status: (action.error.response && action.error.response.status)? action.error.response.status : 404,
       message: (action.error.response && action.error.response.data.error)? action.error.response.data.error : 'Servidor não encontrado'
        || 'Servidor não encontrado'};
+      case 'ERROR_USUARIO': 
+      return {status: (action.error.response && action.error.response.status)? action.error.response.status : 404,
+        message: (action.error.response && action.error.response.data.error)? action.error.response.data.error : 'Servidor não encontrado'
+         || 'Servidor não encontrado'};
     default:
       return state;
   }

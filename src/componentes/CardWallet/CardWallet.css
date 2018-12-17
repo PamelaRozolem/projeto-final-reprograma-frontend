@@ -1,32 +1,50 @@
 .card-wallet {
-  font-size: 1rem;
+  
   display: flex;
-  width: 300px;
+  width: 25%;
   flex-direction: column;
   padding: 1rem;
   margin: 0 0.3em 0.8rem;
-  background: #f1f2f7;
-  border-radius: 2px;
+  background: #ffffff;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
   color: black;
 }
 .card-wallet p{
   margin: 0;
+  font-size: 14px;
+    color: #2e2e3a;
 }
   
+
   .card-wallet h3{
-    font-weight: bold;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #999999;
+    margin: 0;
+
   }
-  
+
+  .card-wallet .header {
+    padding: 5px 0px 10px 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 20px;
+  }
+
   .card-wallet .wallet-tools {
     padding: 0;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    margin-top: 15px;
   }
 
   .card-wallet .word-break{
     word-break: break-all;
+  }
+
+  .card-wallet .datetime {
+    font-size: 12px;
+    float: right;
   }
 
   .card-wallet .btn{
@@ -34,4 +52,10 @@
     border-radius: 5px;
     padding: 10px;
     font-size: 0.8em;
+  }
+
+  .card-wallet .wallet-tools .btn.btn-danger{
+     border-color: #ff518a !important; 
+      background: #ff518a !important;
+      color: white !important;
   }

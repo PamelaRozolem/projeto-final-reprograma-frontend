@@ -29,7 +29,14 @@ class Login extends Component {
       password: campoSenha.getValor()
     }
 
+    
+
     this.props.logaUsuario(dados)
+  }
+
+  resetCampos(){
+    this.emailRef.current = this.emailRef.current.resetValue();
+    this.senhaRef.current =  this.senhaRef.current.resetValue();
   }
 
   habilitaOuDesabilitaBotao = () => {
@@ -44,6 +51,7 @@ class Login extends Component {
   }
 
   status = (message) => {
+    this.resetCampos();
     switch(message.status){
       case 200:
         return <Redirect to="/dashboard" />
@@ -54,6 +62,7 @@ class Login extends Component {
       default:
         return <Menssagem text='Ocorreu um erro inesperado, aguarde e tente novamente!' />
     }
+
   }
 
   render() {

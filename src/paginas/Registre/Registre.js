@@ -15,6 +15,7 @@ import './Registre.css';
 class Registre extends Component {
     constructor(props) {
       super(props)
+      this.input = { value: '' }
   
       this.nomeRef = React.createRef();
       this.emailRef = React.createRef();
@@ -44,7 +45,7 @@ class Registre extends Component {
         const campoNome = this.nomeRef.current;
         const campoEmail = this.emailRef.current;
         const campoSenha = this.senhaRef.current;
-
+    
         const dados = {
             email: campoEmail.getValor(),
             name: campoNome.getValor(),
@@ -52,6 +53,16 @@ class Registre extends Component {
         };
 
         this.props.cadastrarUsuario(dados);
+        this.resetCampos();
+
+    }
+
+    resetCampos (){
+        debugger
+        this.nomeRef.current = this.nomeRef.current.resetValue();
+        this.emailRef.current  = this.emailRef.current.resetValue();
+        this.senhaRef.current  = this.senhaRef.current.resetValue();
+        this.confirmarSenhaRef.current  = this.confirmarSenhaRef.current.resetValue();
     }
 
     status = (message) => {

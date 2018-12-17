@@ -12,6 +12,10 @@ class Campo extends Component {
     return this.input.value;
   }
 
+  resetValue(){
+    return this.input.value = '';
+  }
+
   temErro = () => {
     if (this.state.erro === null || this.state.erro !== '') {
       return true

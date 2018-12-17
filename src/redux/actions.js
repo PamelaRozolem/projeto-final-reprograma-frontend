@@ -8,7 +8,7 @@ const json = localStorage.getItem('usuario')
 if (json) {
   const usuario = JSON.parse(json);
   configuracoes.headers = {
-    'Authorization': usuario
+    'Authorization': 'Bearer '+ usuario.token
   };
 };
 
@@ -21,9 +21,21 @@ export function logaUsuario(dados) {
       .post('/api/auth/authenticate', dados)
       .then(response => {
         api.defaults.headers.common['Authorization'] = 'Bearer '+response.data.token;
-        dispatch({ type: 'LOGA_USUARIO', dados:'Bearer '+response.data.token, status: response.status});
+        dispatch({ type: 'LOGA_USUARIO', dados: response.data, status: response.status});
       }, error => {
         dispatch({type: 'ERROR_LOGAR_USUARIO', error: error});
+      });
+  }
+};
+
+export function dadosUsuario(dados) {
+  return (dispatch) => {
+    api
+      .get('/api/user', dados)
+      .then(response => {
+        dispatch({ type: 'USUARIO', response});
+      }, error => {
+        dispatch({type: 'ERROR_USUARIO', error: error});
       });
   }
 };

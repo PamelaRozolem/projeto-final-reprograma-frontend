@@ -1,0 +1,33 @@
+.cardUser{
+  display:flex;
+  justify-content: flex-start;
+}
+
+.card-dashboard {
+  font-size: 1rem;
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 0.3em 0.8rem;
+  background: #f1f2f7;
+  border-radius: 12px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+  color: black;
+}
+.card-dashboard p{
+  margin: 0;
+}
+  
+
+  .card-dashboard .word-break{
+    word-break: break-all;
+  }
+
+  .cardDashboard__picture {
+    display: block;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  

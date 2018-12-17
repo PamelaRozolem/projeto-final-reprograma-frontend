@@ -29,7 +29,14 @@ class Login extends Component {
       password: campoSenha.getValor()
     }
 
+    this.resetCampos();
+
     this.props.logaUsuario(dados)
+  }
+
+  resetCampos(){
+    this.emailRef.current = this.emailRef.current.resetValue();
+    this.senhaRef.current =  this.senhaRef.current.resetValue();
   }
 
   habilitaOuDesabilitaBotao = () => {

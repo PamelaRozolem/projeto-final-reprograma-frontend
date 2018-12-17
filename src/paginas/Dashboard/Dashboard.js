@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import CardWallet from '../../componentes/CardWallet/CardWallet'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import CardWallet from '../../componentes/CardWallet/CardWallet';
+import CardDashboard from '../../componentes/CardDashboard/CardDashboard';
 import { obterWallets } from '../../redux/actions';
 import {criarWallets} from '../../redux/actions';
 import {deletarWallet} from '../../redux/actions';
@@ -34,6 +35,10 @@ class Dashboard extends Component {
           {this.props.wallets.map( (item) => {
               return <CardWallet dados={item} handleClick={() => this.handleClick(this, item._id)}/>
           })}
+        </div>
+
+        <div className="cardUser">
+          <CardDashboard></CardDashboard>
         </div>
     
       </main>

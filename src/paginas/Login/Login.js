@@ -29,8 +29,6 @@ class Login extends Component {
       password: campoSenha.getValor()
     }
 
-    
-
     this.props.logaUsuario(dados)
   }
 

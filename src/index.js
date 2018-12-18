@@ -6,7 +6,7 @@ import store from './redux/store'
 import Navbar from './componentes/Navbar/Navbar'
 import Dashboard from './paginas/Dashboard/Dashboard'
 import HomePagina from './paginas/HomePagina/HomePagina'
-import Contato from './paginas/Contato/Contato'
+import Sobre from './paginas/Sobre/Sobre'
 import Registre from './paginas/Registre/Registre'
 import Login from './paginas/Login/Login'
 import ForgotPassword from './paginas/ForgotPassword/ForgotPassword'
@@ -28,7 +28,7 @@ function App() {
         <Route path="/reset-senha/:hash" component={ResetSenha}/>
         <Route path="/dashboard" component={Dashboard}/>
         <Route path="/registre" component={Registre}/>
-        <Route path="/contato" component={Contato} />
+        <Route path="/Sobre" component={Sobre} />
         <Route component={NaoEncontrada} />
       </Switch>
     </div>

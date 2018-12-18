@@ -10,13 +10,13 @@ import './Navbar.css'
 function Navbar(props) {
   return (
     <header className="navbar">
-      <Link to="/">
-        <img className="navbar__logo" src={logo} alt="Logo" />
-      </Link>
-      
-      <Menu usuario={props.usuario} deslogaUsuario={props.deslogaUsuario} reset={props.resetWallet} />      
-      
-
+      <div className="logo-h1">
+        <Link to="/">
+          <img className="navbar__logo" src={logo} alt="Logo" />
+          <h1>CriptoCarteira</h1>
+        </Link>
+      </div>
+      <Menu usuario={props.usuario} deslogaUsuario={props.deslogaUsuario} reset={props.resetWallet} />     
     </header>
   )
 }

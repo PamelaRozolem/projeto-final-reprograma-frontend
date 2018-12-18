@@ -47,8 +47,8 @@ class Menu extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contato"  onClick={this.abreOuFechaMenu}>
-                <span className="fas fa-phone"></span> Contato
+              <NavLink to="/sobre"  onClick={this.abreOuFechaMenu}>
+                <span className="fas fa-book-open"></span> Sobre
               </NavLink>
             </li>
               <li>
@@ -64,10 +64,10 @@ class Menu extends Component {
               </li>
           </ul>
            ): (
-            <ul>
+            <ul className="ul-Logout">
               <li>
                 <NavLink to="/login" className="navbar-logout" onClick={this.sair}>
-                  <span className="far fa-2x fa-user-circle"></span> Logout
+                  <span className="texto-sair far fa-2x fa-user-circle" ></span> Sair
                 </NavLink>
                </li>
             </ul>

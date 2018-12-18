@@ -90,18 +90,28 @@
   .navbar-menu__opcoes li a {
     color: #f43d4c;;
     padding: 0.3rem 0;
+    
   }
+}
+
+.ul-Logout li {
+  list-style: none;
+}
+
+.ul-Logout .texto-sair{
+  padding-right: 6px;
+  padding-bottom: 5px;
 }
 
 .navbar-logout{
   color:#f43d4c;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logout .far{
   color: #f43d4c;
 }
 
-.navbar-logout .Li { 
-  list-style: none;
-  text-decoration: none;
-}

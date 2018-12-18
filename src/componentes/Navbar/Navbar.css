@@ -7,12 +7,23 @@
   padding: 0 1rem;
   border-bottom: 1px solid white;
   background-color: white;
-  
+}
+
+.navbar .logo-h1 a{
+  display: flex;
+  color:#f43d4c;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+}
+
+.navbar .logo-h1 h1{
+  font-size: 25px;
 }
 
 .navbar__logo {
   display: block;
-  width: 50px;
+  width: 47px;
   background-image: #c3c3c3;
 }
 

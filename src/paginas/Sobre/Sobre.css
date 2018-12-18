@@ -1,0 +1,24 @@
+.sobre {
+  padding: 3rem 1rem 0;
+}
+.sobre .conteiner{
+  box-shadow: -1px 13px 37px 0px rgba(0,0,0,0.21);
+  width: 1170px;
+  height: 510px;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.sobre h3{
+  color:#f43d4c;
+}
+
+.sobre h1{
+  color:#f43d4c;
+}
+
+.sobre p{
+  margin-left: 5px;
+}

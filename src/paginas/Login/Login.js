@@ -49,9 +49,9 @@ class Login extends Component {
   }
 
   status = (message) => {
-    this.resetCampos();
     switch(message.status){
       case 200:
+      this.resetCampos();
         return <Redirect to="/dashboard" />
       break;
       case 400:

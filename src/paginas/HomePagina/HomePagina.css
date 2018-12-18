@@ -4,7 +4,7 @@
 }
 
 .home-pagina.banner {
-  background: url(./banner.png) no-repeat center center fixed; 
+  background: url(./banner.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,8 +14,11 @@
 }
 
 .home-pagina.banner .card{
-    width: 400px;
-    margin-left: 70px;
+  width: 400px;
+  background-color: rgb(46, 127, 210, 0.9);
+  padding: 7px;
+  border-radius: 5%;
+  margin-left: 30px;
 }
 
 .home-pagina.banner .card h1{
